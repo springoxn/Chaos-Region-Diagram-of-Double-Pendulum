@@ -20,7 +20,7 @@ section{padding:72px 0 0}.section-head{display:flex;justify-content:space-betwee
 </head>
 <body>
 <div class="shell">
-<header class="mast"><a class="brand" href="#top" style="text-decoration:none;color:var(--ink)">CHAOS <span>/</span> LAB</a><nav aria-label="主导航"><a href="#results">结果图谱</a><a href="#generator">生成器</a><a href="dp_v2/report.html">研究报告</a><a href="https://github.com/springoxn/double_pendulum">GitHub</a></nav></header>
+<header class="mast"><a class="brand" href="#top" style="text-decoration:none;color:var(--ink)">CHAOS <span>/</span> LAB</a><nav aria-label="主导航"><a href="#results">结果图谱</a><a href="#generator">生成器</a><a href="dp_v2/report.html">研究报告</a><a href="https://github.com/springoxn/Chaos-Region-Diagram-of-Double-Pendulum">GitHub</a></nav></header>
 <main id="top">
 <section class="hero" style="padding-top:56px"><div><div class="eyebrow">Numerical dynamics · Reproducible MATLAB research</div><h1>让混沌结构<br>变得可计算、可读、可复现。</h1><p>从真实 Lyapunov 指数到吸引子盆地：一套面向双摆与受迫阻尼摆的计算工具、结果生成器与验证工作流。</p><div class="hero-actions"><a class="action" href="#generator">运行结果生成器</a><a class="action secondary" href="dp_v2/report.html">阅读研究报告</a></div></div><aside class="hero-note"><b>算什么，图上就是什么。</b>数值地图来自变分方程；盆地结构与混沌强度分开呈现。</aside></section>
 <figure class="feature"><img src="dp_v2/gallery/dp_energy_compare.png" alt="并列显示双摆 Lyapunov 指数地图、静态势能地图，以及两者的点对点散点关系" fetchpriority="high"><figcaption><strong>双摆初值切片：Lyapunov 指数、势能与点对点关系</strong><span>相关性可见，但切片并非等能面；图像对应的数值结果可由生成器重绘。</span></figcaption></figure>
@@ -45,7 +45,7 @@ python dp_v2/gen/verify_manual.py</code></pre></div></article>
 </div></section>
 <section><div class="section-head"><div><div class="kicker">03 / How to read</div><h2>把指标放回它适用的系统。</h2></div><p>指标不是可互换的“混沌滤镜”。动力学维数、耗散性和扫描截面会改变该问什么、以及答案应如何解释。</p></div><div class="method"><article><h3>双摆 · 保守四维系统</h3><p>采用变分方程与最大 Lyapunov 指数；辛指标用于长时间结构分析。初始角平面固定角速度为零，因此混合不同能量。</p></article><article><h3>受迫摆 · 耗散二维流</h3><p>Lyapunov 指数度量轨道分离；winding number 识别旋转吸引子。二维切空间中的 GALI/SALI 会出现系统性误判，不作为主判据。</p></article><article><h3>有限时间 · 明示限制</h3><p>规则轨道有限时间指数可略正或略负。报告误分类与网格设置，盆地维数也只在解析度足够时解释。</p></article></div><div class="links"><a href="dp_v2/report.html">完整物理解释与读图纪律 ↗</a><a href="dp_v2/manual.html">函数、选项与返回值 ↗</a><a href="verification_report.md">历史指标核查 ↗</a></div></section>
 </main>
-<footer class="footer"><span>Double Pendulum Chaos Lab · MATLAB research toolkit</span><span><a href="https://github.com/springoxn/double_pendulum">springoxn/double_pendulum</a> · Figures are generated research outputs</span></footer>
+<footer class="footer"><span>Double Pendulum Chaos Lab · MATLAB research toolkit</span><span><a href="https://github.com/springoxn/Chaos-Region-Diagram-of-Double-Pendulum">springoxn/double_pendulum</a> · Figures are generated research outputs</span></footer>
 </div>
 </body>
 </html>

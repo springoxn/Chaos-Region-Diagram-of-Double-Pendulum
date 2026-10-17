@@ -1,0 +1,26 @@
+# Publish the maintained toolkit and curated landing pages only.
+!/.gitignore
+/*
+!/README.md
+!/index.html
+!/verification_report.md
+!/dp_v2/
+
+# Generated/runtime debris
+__pycache__/
+*.py[cod]
+*.nbc
+*.nbi
+*.bak-*
+*.log
+.DS_Store
+Thumbs.db
+
+# Large TeX build/cache products
+/dp_v2/arxiv_paper/.texcache/
+/dp_v2/arxiv_paper/build/
+/dp_v2/arxiv_paper/out/
+/dp_v2/arxiv_paper/*.aux
+/dp_v2/arxiv_paper/*.log
+/dp_v2/arxiv_paper/*.bbl
+/dp_v2/arxiv_paper/*.blg
